@@ -10,7 +10,7 @@ const { invalidateRankingCache } = require("./ranking.service");
 const settingsService = require("./settings.service");
 
 const VOTE_PRICE = 50;
-const GENIUSPAY_BASE_URL = "https://pay.genius.ci/api/v1/merchant";
+const GENIUSPAY_BASE_URL = "https://geniuspay.ci/api/v1/merchant";
 const PAYPAL_BASE_URL = process.env.PAYPAL_BASE_URL || "https://api-m.sandbox.paypal.com";
 const PAYPAL_CURRENCY = process.env.PAYPAL_CURRENCY || "USD";
 const PAYPAL_XAF_RATE = parseFloat(process.env.PAYPAL_XAF_RATE) || 650;
