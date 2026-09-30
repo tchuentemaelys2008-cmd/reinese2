@@ -86,7 +86,7 @@ function resolveProvider({ provider, region, country }) {
   if (provider === "paypal") return "paypal";
   if (!region) return "fapshi"; // bouton "Cameroun" (Orange + MTN via Fapshi)
   if (region === "africa" && PRECISE_AGGREGATOR_COUNTRIES.includes(toIso2(country))) {
-    return "kpay"; // TEMP (voir ci-dessus)
+    return "geniuspay"; // TEMP (voir ci-dessus)
   }
   return "geniuspay"; // reste de l'Afrique + Europe + Cartes
 }
